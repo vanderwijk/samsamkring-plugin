@@ -4,7 +4,7 @@ function calculator_shortcode( $atts ) {
 
 	$content = '';
 
-	$content .= '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.css">';
+	$content .= '<p>&nbsp;</p>';
 
 	$content .= '<form>';
 	$content .= '<label for="desired-income">Gewenste inkomen bij arbeidsongeschiktheid</label>';
