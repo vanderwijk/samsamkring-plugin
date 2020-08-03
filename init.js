@@ -40,6 +40,7 @@ function calculate_required_income() {
 	numeral.locale('nl-nl');
 	var required_income_eenmanszaak = numeral(required_income_eenmanszaak).format('$0,0.00');
 	jQuery('#required-income-eenmanszaak').html(required_income_eenmanszaak);
+	jQuery('#required-income-bv').html(required_income_eenmanszaak);
 }
 
 function calculate_monthly_instalment() {
