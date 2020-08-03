@@ -25,8 +25,12 @@ add_action( 'plugins_loaded', 'samsamkring_load_textdomain' );
 require_once( 'shortcode-calculator.php' );
 
 function samsamkring_enqueues() {
-	wp_enqueue_style( 'rangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.css', '2.3.3', 'all' );
-	wp_enqueue_script( 'rangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.js', array('jquery'), '2.3.3', true );
-	wp_enqueue_script( 'init', '/wp-content/plugins/samsamkring-plugin/init.js', array('jquery'), '2.3.3', true );
+	wp_enqueue_style( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.css', 'all' );
+	wp_enqueue_style( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.css', 'all' );
+	wp_enqueue_script( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.min.js', array('jquery'), '2.3.3', true );
+
+	wp_enqueue_script( 'numeral', '/wp-content/plugins/samsamkring-plugin/node_modules/numeral/min/numeral.min.js', array(), '2.0.6', true );
+	wp_enqueue_script( 'numeral-nl', '/wp-content/plugins/samsamkring-plugin/node_modules/numeral/min/locales/nl-nl.min.js', array('jquery'), '2.0.6', true );
+	wp_enqueue_script( 'init', '/wp-content/plugins/samsamkring-plugin/init.js', array('jquery'), '1.0', true );
 }
 add_action('wp_enqueue_scripts', 'samsamkring_enqueues');

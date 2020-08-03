@@ -1,0 +1,28 @@
+label[for=desired-income] {
+	font-weight: 600;
+	font-size: 1.4em;
+	margin: .5em 0;
+}
+
+.rangeslider {
+	margin: 20px 0;
+}
+.rangeslider__fill {
+	background: var(--paletteColor2);
+}
+
+.rangeslider__handle {
+	width: 140px;
+	border-radius: 10px;
+}
+
+.rangeslider__handle:after {
+	content: none;
+}
+
+.desired {
+	font-weight: 600;
+	font-size: 1.4em;
+	display: block;
+	text-align: center;
+}
