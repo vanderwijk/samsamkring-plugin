@@ -20,7 +20,7 @@ function calculator_shortcode( $atts ) {
 	$content .= '<strong><span id="required-income-eenmanszaak"></span></strong>';
 	$content .= ' benodigd en voor een BV bedraagt het minimum maandinkomen ';
 	$content .= '<strong><span id="required-income-bv"></span></strong>.';
-	$content .= '<p>*Het maandbedrag is inclusief de kosten van een privé Premium bunq account.</p>';
+	$content .= '<p>*Het maandbedrag is inclusief de kosten van een privé Premium bunq account. Je spaarbedrag bedoeld voor schenkingen en de arbodienst is <span id="health_and_safety_service"></span> en de bank en administratie kosten bedragen € 23,00. Deelnemers sinds de start in juli 2018 hebben van het spaarbedrag nog 95% (<span id="surplus"></span>) over.</p>';
 
 	$content .= '</form>';
 

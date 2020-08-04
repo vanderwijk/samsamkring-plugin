@@ -14,12 +14,14 @@ jQuery('#desired-income').rangeslider({
 	onInit: function() {
 		calculate_monthly_instalment();
 		calculate_required_income();
+		calculate_costs();
 	},
 
 	// Callback function
 	onSlide: function(position, value) {
 		calculate_monthly_instalment();
 		calculate_required_income();
+		calculate_costs();
 	},
 
 	// Callback function
@@ -71,4 +73,16 @@ function calculate_monthly_instalment() {
 	jQuery("#montly-instalment").html(monthly_instalment);
 	jQuery("#desired-income-display").html(desired_income);
 	jQuery('.rangeslider__handle').html( '<span class="desired">' + desired_income + '</span>');
+}
+
+function calculate_costs() {
+	var desired_income = jQuery('#desired-income').val();
+	var health_and_safety_service = 0.045 * desired_income;
+	var surplus = 0.95 * desired_income * 0.045;
+
+	numeral.locale('nl-nl');
+	var health_and_safety_service = numeral(health_and_safety_service).format('$0,0.00');
+	var surplus = numeral(surplus).format('$0,0.00');
+	jQuery("#health_and_safety_service").html(health_and_safety_service);
+	jQuery("#surplus").html(surplus);
 }
