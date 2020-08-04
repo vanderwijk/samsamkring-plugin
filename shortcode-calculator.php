@@ -15,13 +15,12 @@ function calculator_shortcode( $atts ) {
 	$content .= '<p>Bij een gewenst maandinkomen bij arbeidsongeschiktheid van ';
 	$content .= '<strong><span id="desired-income-display"></span></strong> ';
 	$content .= 'bedraagt de maandelijkse inleg ';
-	$content .= '<strong><span id="montly-instalment"></span>*</strong>. ';
-	$content .= 'Indien je een eenmanszaak hebt is hiervoor is een maandelijks bruto inkomen van minimaal ';
+	$content .= '<strong><span id="montly-instalment"></span>*</strong>.</p>';
+	$content .= '<p>Indien je een eenmanszaak hebt is hiervoor is een maandelijks bruto inkomen van minimaal ';
 	$content .= '<strong><span id="required-income-eenmanszaak"></span></strong>';
-	$content .= ' benodigd. Als je een BV hebt bedraagt het minimum maandinkomen ';
+	$content .= ' benodigd en voor een BV bedraagt het minimum maandinkomen ';
 	$content .= '<strong><span id="required-income-bv"></span></strong>.';
 	$content .= '<p>*Het maandbedrag is inclusief de kosten van een privé Premium bunq account.</p>';
-	
 
 	$content .= '</form>';
 
