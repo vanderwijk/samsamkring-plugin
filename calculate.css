@@ -17,7 +17,7 @@ label[for=desired-income] {
 }
 
 .rangeslider__handle:after {
-	content: none;
+	background-image: none;
 }
 
 .desired {
