@@ -28,19 +28,38 @@ jQuery('#desired-income').rangeslider({
 
 function calculate_required_income() {
 	var desired_income = jQuery('#desired-income').val();
-	var a = -0.000000000037936 * desired_income;
-	var a4 = Math.pow(a, 4);
-	var b = 0.00000026359 * desired_income;
-	var b3 = Math.pow(b, 3);
-	var c = 0.00021489 * desired_income;
-	var c2 = Math.pow(c, 2);
-	var required_income_eenmanszaak = -0.000000000037936 * desired_income ^4 + 0.00000026359 * desired_income ^3 - 0.00021489 * desired_income ^2 + 0.79034 * desired_income + 517.5;
-	//var total_bv = 0.000000000043457 * desired_income ^4 - 0.00000051491 * desired_income ^3 + 0.0022299 * desired_income ^2 - 1.478 * desired_income + 1132.76;
-	//var total = a4 + b3 - c2 + 0.79034 * desired_income + 517.5;
+
+	var a4 = Math.pow(desired_income, 4);
+	var a = -0.000000000037936 * a4;
+
+	var b3 = Math.pow(desired_income, 3);
+	var b = 0.00000026359 * b3;
+
+	var c2 = Math.pow(desired_income, 2);
+	var c = 0.00021489 * c2;
+
+	var d = 0.000000000043457 * a4;
+	var e = 0.00000051491 * b3;
+	var f = 0.0022299 * c2;
+/*
+	machtsverheffen
+	vermenigvuldigen
+	delen
+	worteltrekken
+	optellen
+	aftrekken
+*/
+	//var required_income_eenmanszaak = ( -0.000000000037936 * ( desired_income ^4 ) ) + ( 0.00000026359 * ( desired_income ^3 ) ) - ( 0.00021489 * ( desired_income ^2 ) ) + ( ( 0.79034 * desired_income) + 517.5);
+	//var total_bv =                       0.000000000043457 * desired_income ^4 - 0.00000051491 * desired_income ^3 + 0.0022299 * desired_income ^2 - 1.478 * desired_income + 1132.76;
+	//0,000000000043457*[Sliderwaarde]^4 - 0,00000051491*[Sliderwaarde]^3 + 0,0022299*[Sliderwaarde]^2 - 1,478*[Sliderwaarde] + 1132,76
+	
+	var required_income_eenmanszaak = a + b - c + 0.79034 * desired_income + 517.5;
+	var required_income_bv = d - e + f - 1.478 * desired_income + 1132.76;
 	numeral.locale('nl-nl');
 	var required_income_eenmanszaak = numeral(required_income_eenmanszaak).format('$0,0.00');
+	var required_income_bv = numeral(required_income_bv).format('$0,0.00');
 	jQuery('#required-income-eenmanszaak').html(required_income_eenmanszaak);
-	jQuery('#required-income-bv').html(required_income_eenmanszaak);
+	jQuery('#required-income-bv').html(required_income_bv);
 }
 
 function calculate_monthly_instalment() {
