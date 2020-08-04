@@ -69,10 +69,11 @@ function calculate_monthly_instalment() {
 	var monthly_instalment = 0.045 * desired_income + 15 + 8;
 	numeral.locale('nl-nl');
 	var desired_income = numeral(desired_income).format('$0,0.00');
+	var desired_income_clean = numeral(desired_income).format('$0,0');
 	var monthly_instalment = numeral(monthly_instalment).format('$0,0.00');
 	jQuery("#montly-instalment").html(monthly_instalment);
 	jQuery("#desired-income-display").html(desired_income);
-	jQuery('.rangeslider__handle').html( '<span class="desired">' + desired_income + '</span>');
+	jQuery('.rangeslider__handle').html( '<span class="desired">' + desired_income_clean + '</span>');
 }
 
 function calculate_costs() {
