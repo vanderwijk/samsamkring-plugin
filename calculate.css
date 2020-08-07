@@ -27,6 +27,7 @@ label[for=desired-income] {
 	text-align: center;
 }
 
-.calculator span {
+.calculator span,
+.surplus {
 	white-space: nowrap;
 }
