@@ -28,6 +28,11 @@ label[for=desired-income] {
 }
 
 .calculator span,
-.surplus {
+.surplus,
+.desired-income,
+.montly-instalment,
+.required-income-eenmanszaak,
+.required-income-bv,
+.health_and_safety_service {
 	white-space: nowrap;
 }

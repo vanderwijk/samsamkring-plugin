@@ -23,7 +23,7 @@ function samsam_load_textdomain() {
 }
 add_action( 'plugins_loaded', 'samsam_load_textdomain' );
 
-require_once( 'options.php' );
+require_once( 'samsam-options.php' );
 require_once( 'shortcode-calculator.php' );
 
 function samsam_enqueues() {

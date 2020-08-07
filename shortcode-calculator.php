@@ -4,13 +4,7 @@ function calculator_shortcode( $atts ) {
 	ob_start(); ?>
 
 <form class="calculator">
-	<label for="desired-income">Kies je gewenste maandinkomen bij arbeidsongeschiktheid</label>
 	<input type="range" id="desired-income" min="1000" max="4000" value="2500" step="50">
-
-	<p>Bij een gewenst maandinkomen bij arbeidsongeschiktheid van <strong><span id="desired-income-display"></span></strong> bedraagt de maandelijkse inleg <strong><span id="montly-instalment"></span>*</strong>.</p>
-	<p>Indien je een eenmanszaak hebt is hiervoor is een maandelijks bruto inkomen van minimaal <strong><span id="required-income-eenmanszaak"></span></strong> benodigd en voor een BV bedraagt het minimum maandinkomen <strong><span id="required-income-bv"></span></strong>.
-	<p>*Het maandbedrag is inclusief de kosten van een privé Premium bunq account. Je spaarbedrag bedoeld voor schenkingen en de arbodienst is <span id="health_and_safety_service"></span> en de bank en administratie kosten bedragen € 23,00. Deelnemers sinds de start in juli 2018 hebben van het spaarbedrag nog <?php echo esc_html ( get_option( 'surplus_percentage', 95 ) ); ?> % (<span class="surplus"></span>) over.</p>
-
 </form>
 
 <div style="background-color:var(--paletteColor5);padding-left:7%;padding-right:7%;padding-bottom:3%;padding-top:3%" class="wp-block-atomic-blocks-ab-container nomarginbottom ab-block-container alignfull">
@@ -69,7 +63,7 @@ function calculator_shortcode( $atts ) {
 
 							<p style="font-size: 30px; font-family: Roboto; color:var(--paletteColor2); font-weight: 900; margin-bottom: 10px;" class="surplus"></p>
 
-						<h3 style="font-size: 16px; font-family: Merriweather Sans; margin-top: 1px; margin-bottom: 1px; font-weight: 500; align-self: center;">
+						<h3 style="font-size: 16px; font-family: Merriweather Sans; margin-top: 1px; margin-bottom: 1px; font-weight: 500; align-self: center; text-align: center;">
 							gespaard van inleg in de afgelopen 22 maanden in SamSamkring.
 						</h3>
 					</div>
@@ -79,6 +73,10 @@ function calculator_shortcode( $atts ) {
 		</div>
 	</div>
 </div>
+
+<p>Bij een gewenst maandinkomen bij arbeidsongeschiktheid van <strong><span id="desired-income-display" class="desired-income"></span></strong> bedraagt de maandelijkse inleg <strong><span id="montly-instalment" class="montly-instalment"></span>*</strong>.</p>
+<p>Indien je een eenmanszaak hebt is hiervoor is een maandelijks bruto inkomen van minimaal <strong><span id="required-income-eenmanszaak" class="required-income-eenmanszaak"></span></strong> benodigd en voor een BV bedraagt het minimum maandinkomen <strong><span id="required-income-bv" class="required-income-bv"></span></strong>.
+<p>*Het maandbedrag is inclusief de kosten van een privé Premium bunq account. Je spaarbedrag bedoeld voor schenkingen en de arbodienst is <span id="health_and_safety_service" class="health_and_safety_service"></span> en de bank en administratie kosten bedragen € 23,00. Deelnemers sinds de start in juli 2018 hebben van het spaarbedrag nog <?php echo esc_html ( get_option( 'surplus_percentage', 95 ) ); ?> % (<span class="surplus"></span>) over.</p>
 
 <?php
 	$ob_str = ob_get_contents();
