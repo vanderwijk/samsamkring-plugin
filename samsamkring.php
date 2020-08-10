@@ -27,8 +27,11 @@ require_once( 'samsam-options.php' );
 require_once( 'shortcode-calculator.php' );
 
 function samsam_enqueues() {
-	wp_enqueue_style( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.css', 'all' );
-	wp_enqueue_style( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.css', 'all' );
+
+	wp_enqueue_style( 'roboto-font', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap' ); 
+
+	wp_enqueue_style( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.css', array(), '1.1', 'all');
+	wp_enqueue_style( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.css', array(), '1.1', 'all');
 
 	wp_enqueue_script( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.min.js', array( 'jquery' ), '2.3.3', true );
 	wp_enqueue_script( 'numeral', '/wp-content/plugins/samsamkring-plugin/node_modules/numeral/min/numeral.min.js', array(), '2.0.6', true );
