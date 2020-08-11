@@ -45,26 +45,28 @@ label[for=desired-income] {
 	text-align: center;
 }
 
+.calculator-icons p {
+	margin: 10px 0 10px 0;
+}
+
 .calculator-icons img {
 	height: 95px;
 	width: auto;
 }
 
-.calculator-icons h3 {
-	color: var(--paletteColor3);
-	font-family: Merriweather Sans;
+.calculator-icons .amount {
+	color: var(--paletteColor2);
+	font-family: Roboto;
 	font-size: 30px;
 	font-weight: 900;
-	margin-bottom: 10px;
-	margin-top: 20px!important;
+	display: inline;
 }
-.calculator-icons h4 {
+.calculator-icons .description {
 	color: var(--paletteColor2);
-	font-family: Merriweather Sans;
+	font-family: 'Roboto';
 	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	margin-top: 0!important;
-	text-transform: uppercase;
-	letter-spacing: -1px;
+	font-weight: 400;
+	text-transform: lowercase;
+	display: inline;
+
 }
