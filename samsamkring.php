@@ -25,13 +25,13 @@ require_once( 'samsam-options.php' );
 require_once( 'shortcode-calculator.php' );
 
 function samsam_enqueues() {
-	wp_enqueue_style( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.css', array(), '1.1', 'all');
-	wp_enqueue_style( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.css', array(), '1.1', 'all');
+	wp_enqueue_style( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.css', array(), '2.3.2', 'all');
+	wp_enqueue_style( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.css', array(), '1.2', 'all');
 
-	wp_enqueue_script( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.min.js', array( 'jquery' ), '2.3.3', true );
+	wp_enqueue_script( 'rangeslider', '/wp-content/plugins/samsamkring-plugin/node_modules/rangeslider.js/dist/rangeslider.min.js', array( 'jquery' ), '2.3.2', true );
 	wp_enqueue_script( 'numeral', '/wp-content/plugins/samsamkring-plugin/node_modules/numeral/min/numeral.min.js', array(), '2.0.6', true );
 	wp_enqueue_script( 'numeral-nl', '/wp-content/plugins/samsamkring-plugin/node_modules/numeral/min/locales/nl-nl.min.js', array( 'jquery' ), '2.0.6', true );
-	wp_enqueue_script( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.js', array( 'jquery' ), '1.1', true );
+	wp_enqueue_script( 'calculate', '/wp-content/plugins/samsamkring-plugin/calculate.js', array( 'jquery' ), '1.2', true );
 
 	// dynamic values for JS calculations -> check for empty because default value for get_option doesn't work
 	if ( empty( get_option( 'administration_costs' ))) { $administration_costs = 15; } else { $administration_costs = get_option( 'administration_costs' ); }
