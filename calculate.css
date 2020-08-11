@@ -5,7 +5,7 @@ label[for=desired-income] {
 }
 
 .rangeslider {
-	margin: 20px 0 40px 0;
+	margin: 40px 0 60px 0;
 }
 .rangeslider__fill {
 	background: var(--paletteColor2);
@@ -46,7 +46,7 @@ label[for=desired-income] {
 }
 
 .calculator-icons img {
-	height: 100px;
+	height: 95px;
 	width: auto;
 }
 
