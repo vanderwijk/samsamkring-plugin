@@ -67,3 +67,10 @@ label[for=desired-income] {
 	text-transform: uppercase;
 	letter-spacing: -1px;
 }
+
+@media(max-width: 689.98px) {
+	.calculator-title {
+		font-size: 26px;
+		word-break: break-word;
+	}
+}
