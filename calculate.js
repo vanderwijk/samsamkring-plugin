@@ -1,18 +1,21 @@
-jQuery('#desired-income').rangeslider({
-	polyfill: false, // prevent fallback to default browser slider
+jQuery( document ).ready(function($) {
 
-	onInit: function() {
-		calculate_monthly_payment();
-		calculate_required_income();
-		calculate_costs();
-	},
+	$('#desired-income').rangeslider({
+		polyfill: false, // prevent fallback to default browser slider
 
-	onSlide: function(position, value) {
-		calculate_monthly_payment();
-		calculate_required_income();
-		calculate_costs();
-	},
+		onInit: function() {
+			calculate_monthly_payment();
+			calculate_required_income();
+			calculate_costs();
+		},
 
+		onSlide: function(position, value) {
+			calculate_monthly_payment();
+			calculate_required_income();
+			calculate_costs();
+		},
+
+	});
 });
 
 // calculate required income for eenmanszaak and bv
