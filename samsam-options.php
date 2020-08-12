@@ -20,6 +20,7 @@ function samsam_register_settings() {
 	register_setting( 'samsam-settings-group', 'health_and_safety_service_costs', 'samsam_sanitisation' );
 	register_setting( 'samsam-settings-group', 'cost_factor', 'samsam_sanitisation' );
 	register_setting( 'samsam-settings-group', 'surplus_percentage', 'samsam_sanitisation' );
+	register_setting( 'samsam-settings-group', 'show_specification' );
 }
 
 function samsam_sanitisation ( $input ) {

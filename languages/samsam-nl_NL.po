@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SamSamKring Plugin\n"
-"POT-Creation-Date: 2020-08-11 10:21+0200\n"
-"PO-Revision-Date: 2020-08-11 10:21+0200\n"
+"POT-Creation-Date: 2020-08-12 09:28+0200\n"
+"PO-Revision-Date: 2020-08-12 09:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -22,56 +22,81 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: samsam-options.php:10 samsam-options.php:30
+#: samsam-options.php:10 samsam-options.php:33
 msgid "SamSam Options"
 msgstr "SamSam instellingen"
 
-#: samsam-options.php:37
+#: samsam-options.php:40
 msgid "Administration costs"
 msgstr "Administratiekosten"
 
-#: samsam-options.php:42
+#: samsam-options.php:45
 msgid "Monthly administration costs."
 msgstr "Maandelijkse administratiekosten."
 
-#: samsam-options.php:42 samsam-options.php:53 samsam-options.php:64
-#: samsam-options.php:75 samsam-options.php:86
+#: samsam-options.php:45 samsam-options.php:56 samsam-options.php:67
+#: samsam-options.php:78 samsam-options.php:89 samsam-options.php:100
+#: samsam-options.php:111 samsam-options.php:122
 msgid "The default value is"
 msgstr "De standaardwaarde is"
 
-#: samsam-options.php:48
+#: samsam-options.php:51
 msgid "Bank costs"
 msgstr "Bankkosten"
 
-#: samsam-options.php:53
+#: samsam-options.php:56
 msgid "Monthly bank costs."
 msgstr "Maandelijkse bankkosten."
 
-#: samsam-options.php:59
+#: samsam-options.php:62
 msgid "Health and Safety Service costs"
 msgstr "Kosten arbodienst"
 
-#: samsam-options.php:64
+#: samsam-options.php:67
 msgid "Monthly costs for the Health and Safety Service."
 msgstr "Maandelijkse kosten arbodienst."
 
-#: samsam-options.php:70
+#: samsam-options.php:73
 msgid "Cost factor"
 msgstr "Kostenfactor"
 
-#: samsam-options.php:75
+#: samsam-options.php:78
 msgid "Description of this option."
 msgstr "Beschrijving van deze optie."
 
-#: samsam-options.php:81
+#: samsam-options.php:84
 msgid "Surplus percentage"
 msgstr "Spaarpercentage"
 
-#: samsam-options.php:86
+#: samsam-options.php:89
 msgid "Historic savings percentage."
 msgstr "Historisch spaarpercentage."
 
-#: samsam-options.php:91
+#: samsam-options.php:95
+msgid "Slider minimum"
+msgstr "Slider minimum"
+
+#: samsam-options.php:100
+msgid "Starting value on the range slider."
+msgstr "Beginwaarde van de slider."
+
+#: samsam-options.php:106
+msgid "Slider default"
+msgstr "Slider standaard"
+
+#: samsam-options.php:111
+msgid "Default value on the range slider."
+msgstr "Standaardwaarde van de slider."
+
+#: samsam-options.php:117
+msgid "Slider maximum"
+msgstr "Slider maximum"
+
+#: samsam-options.php:122
+msgid "End value on the range slider."
+msgstr "Eindwaarde van de slider."
+
+#: samsam-options.php:127
 msgid "Save Changes"
 msgstr "Wijzigingen opslaan"
 
@@ -84,8 +109,8 @@ msgid "https://www.samsamkring.nl/"
 msgstr "https://www.samsamkring.nl/"
 
 #. Description of the plugin/theme
-msgid "Calculator"
-msgstr "Rekenmachine"
+msgid "SamSam check and other functions"
+msgstr "SamSam check en andere functies"
 
 #. Author of the plugin/theme
 msgid "Johan van der Wijk"
@@ -94,6 +119,12 @@ msgstr "Johan van der Wijk"
 #. Author URI of the plugin/theme
 msgid "https://thewebworks.nl"
 msgstr "https://thewebworks.nl"
+
+#~ msgid "Slider start"
+#~ msgstr "Slider start"
+
+#~ msgid "Calculator"
+#~ msgstr "Rekenmachine"
 
 #~ msgid "Fixed costs"
 #~ msgstr "Vaste kosten"
