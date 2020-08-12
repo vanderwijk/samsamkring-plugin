@@ -18,20 +18,20 @@ function calculator_shortcode( $atts ) {
 	<div class="wp-block-columns has-3-columns calculator-icons">
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/coins.png" alt="Maandelijkse inleg">
-			<h3 class="montly-payment"></h3>
-			<h4>Maandelijkse inleg</h4>
+			<p class="amount montly-payment"></p>
+			<p class="amount-title">Maandelijkse inleg</p>
 			<p>dit bedrag is inclusief alle kosten bij het inkomen van jouw keuze.</p>
 		</div>
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/pig.png" alt="Maandelijks gespaard">
-			<h3 class="surplus"></h3>
-			<h4>Maandelijks gespaard</h4>
+			<p class="amount surplus"></p>
+			<p class="amount-title">Maandelijks gespaard</p>
 			<p>door deelnemers van het eerste uur met hetzelfde inkomen als jouw keuze.</p>
 		</div>
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/person.png" alt="Benodigd inkomen">
-			<h3 class="required-income-eenmanszaak"></h3>
-			<h4>Benodigd inkomen</h4>
+			<p class="amount required-income-eenmanszaak"></p>
+			<p class="amount-title">Benodigd inkomen</p>
 			<p>uit onderneming per maand als je een eenmanszaak of vof hebt (BV: <span class="required-income-bv"></span>).</p>
 		</div>
 	</div>
