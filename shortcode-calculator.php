@@ -31,7 +31,7 @@ function calculator_shortcode( $atts ) {
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/person.png" alt="Benodigd inkomen">
 			<p class="amount required-income-eenmanszaak"></p>
-			<p class="amount-title">Benodigd inkomen</p>
+			<p class="amount-title">Bruto benodigd inkomen</p>
 			<p>uit onderneming per maand als je een eenmanszaak of vof hebt (BV: <span class="required-income-bv"></span>).</p>
 		</div>
 	</div>
