@@ -19,20 +19,20 @@ function calculator_shortcode( $atts ) {
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/coins.png" alt="Maandelijkse inleg">
 			<p class="amount montly-payment"></p>
-			<p class="amount-title">Maandelijkse inleg</p>
-			<p>dit bedrag is inclusief alle kosten bij het inkomen van jouw keuze.</p>
+			<p class="amount-title">Maandelijkse storting</p>
+			<p>dit bedrag is inclusief alle kosten.</p>
 		</div>
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/pig.png" alt="Maandelijks gespaard">
 			<p class="amount surplus"></p>
 			<p class="amount-title">Maandelijks gespaard</p>
-			<p>door deelnemers van het eerste uur met hetzelfde inkomen als jouw keuze.</p>
+			<p>in de afgelopen 12 maanden (gemiddeld).</p>
 		</div>
 		<div class="wp-block-column">
 			<img src="/wp-content/plugins/samsamkring-plugin/img/person.png" alt="Benodigd inkomen">
 			<p class="amount required-income-eenmanszaak"></p>
 			<p class="amount-title">Benodigd inkomen</p>
-			<p>bruto uit onderneming per maand als je een eenmanszaak of vof hebt (BV: <span class="required-income-bv"></span>).</p>
+			<p>bruto uit onderneming per maand (ZZP’er).</p>
 		</div>
 	</div>
 
