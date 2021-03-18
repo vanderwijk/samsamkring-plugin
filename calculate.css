@@ -59,7 +59,7 @@ label[for=desired-income] {
 }
 
 .amount-title {
-	color: var(--paletteColor2);
+	color: var(--paletteColor3);
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 10px;
