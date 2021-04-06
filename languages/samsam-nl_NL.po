@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SamSamKring Plugin\n"
-"POT-Creation-Date: 2021-04-02 16:06+0200\n"
-"PO-Revision-Date: 2021-04-02 16:08+0200\n"
+"POT-Creation-Date: 2021-04-06 14:20+0200\n"
+"PO-Revision-Date: 2021-04-06 14:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -22,80 +22,88 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: samsam-options.php:10 samsam-options.php:38
+#: samsam-options.php:10 samsam-options.php:41
 msgid "SamSam Options"
 msgstr "SamSam instellingen"
 
-#: samsam-options.php:41
+#: samsam-options.php:44
 msgid "Costs and Savings"
 msgstr "Kosten en spaarpercentage"
 
-#: samsam-options.php:46
+#: samsam-options.php:49
 msgid "Administration costs"
 msgstr "Administratiekosten"
 
-#: samsam-options.php:51
+#: samsam-options.php:54
 msgid "Monthly administration costs."
 msgstr "Maandelijkse administratiekosten."
 
-#: samsam-options.php:51 samsam-options.php:62 samsam-options.php:73
-#: samsam-options.php:84 samsam-options.php:95
+#: samsam-options.php:54 samsam-options.php:65 samsam-options.php:76
+#: samsam-options.php:87 samsam-options.php:98
 msgid "The default value is"
 msgstr "De standaardwaarde is"
 
-#: samsam-options.php:57
+#: samsam-options.php:60
 msgid "Bank costs"
 msgstr "Bankkosten"
 
-#: samsam-options.php:62
+#: samsam-options.php:65
 msgid "Monthly bank costs."
 msgstr "Maandelijkse bankkosten."
 
-#: samsam-options.php:68
+#: samsam-options.php:71
 msgid "Health and Safety Service costs"
 msgstr "Kosten arbodienst"
 
-#: samsam-options.php:73
+#: samsam-options.php:76
 msgid "Monthly costs for the Health and Safety Service."
 msgstr "Maandelijkse kosten arbodienst."
 
-#: samsam-options.php:79
+#: samsam-options.php:82
 msgid "Cost factor"
 msgstr "Kostenfactor"
 
-#: samsam-options.php:84
+#: samsam-options.php:87
 msgid "Description of this option."
 msgstr "Beschrijving van deze optie."
 
-#: samsam-options.php:90
+#: samsam-options.php:93
 msgid "Surplus percentage"
 msgstr "Spaarpercentage"
 
-#: samsam-options.php:95
+#: samsam-options.php:98
 msgid "Historic savings percentage."
 msgstr "Historisch spaarpercentage."
 
-#: samsam-options.php:99
+#: samsam-options.php:102
 msgid "Labels"
 msgstr "Labels"
 
-#: samsam-options.php:104
+#: samsam-options.php:107 shortcode-calculator.php:32
 msgid "Monthly deposit"
 msgstr "Maandelijkse storting"
 
-#: samsam-options.php:114
+#: samsam-options.php:117 shortcode-calculator.php:43
 msgid "Monthly costs"
 msgstr "Maandelijkse kosten"
 
-#: samsam-options.php:124
+#: samsam-options.php:127 shortcode-calculator.php:57
 msgid "Monthly savings"
 msgstr "Maandelijks gespaard"
 
-#: samsam-options.php:134
+#: samsam-options.php:137 shortcode-calculator.php:70
 msgid "Required income"
 msgstr "Benodigd inkomen"
 
-#: samsam-options.php:143
+#: samsam-options.php:145
+msgid "Colors"
+msgstr "Kleuren"
+
+#: samsam-options.php:150
+msgid "Piggybank color"
+msgstr "Accentkleur spaarvarkentjes"
+
+#: samsam-options.php:159
 msgid "Save Changes"
 msgstr "Wijzigingen opslaan"
 
