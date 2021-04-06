@@ -24,11 +24,11 @@ function samsam_register_settings() {
 	register_setting( 'samsam-settings-group', 'surplus_percentage', 'samsam_sanitisation' );
 	register_setting( 'samsam-settings-group', 'show_specification' );
 
-	register_setting( 'samsam-settings-group', 'monthly_deposit_label' );
-	register_setting( 'samsam-settings-group', 'monthly_costs_label' );
-	register_setting( 'samsam-settings-group', 'monthly_savings_label' );
-	register_setting( 'samsam-settings-group', 'required_income_label' );
-	register_setting( 'samsam-settings-group', 'piggybank_color' );
+	register_setting( 'samsam-settings-group', 'monthly_deposit_label', array('type' => 'string', 'sanitize_callback' => 'samsam_sanitisation', 'default' => 'dit bedrag is inclusief alle kosten.') );
+	register_setting( 'samsam-settings-group', 'monthly_costs_label', array('type' => 'string', 'sanitize_callback' => 'samsam_sanitisation', 'default' => 'dit bedrag is inclusief administratiekosten.') );
+	register_setting( 'samsam-settings-group', 'monthly_savings_label', array('type' => 'string', 'sanitize_callback' => 'samsam_sanitisation', 'default' => 'in de afgelopen 12 maanden (gemiddeld).') );
+	register_setting( 'samsam-settings-group', 'required_income_label', array('type' => 'string', 'sanitize_callback' => 'samsam_sanitisation', 'default' => 'bruto uit onderneming per maand (ZZP’er).') );
+	register_setting( 'samsam-settings-group', 'piggybank_color', array('type' => 'string', 'sanitize_callback' => 'samsam_sanitisation', 'default' => '#A12242') );
 }
 
 function samsam_sanitisation ( $input ) {

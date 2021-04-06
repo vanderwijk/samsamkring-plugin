@@ -30,7 +30,7 @@ function calculator_shortcode( $atts ) {
 			</svg>
 			<p class="amount montly-payment"></p>
 			<p class="amount-title"><?php _e( 'Monthly deposit', 'samsam' ); ?></p>
-			<p><?php echo get_option( 'monthly_deposit_label' ); ?></p>
+			<p><?php echo get_option( 'monthly_deposit_label', 'dit bedrag is inclusief alle kosten.' ); ?></p>
 		</div>
 		<div class="wp-block-column">
 			<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ function calculator_shortcode( $atts ) {
 			</svg>
 			<p class="amount monthly-costs"></p>
 			<p class="amount-title"><?php _e( 'Monthly costs', 'samsam' ); ?></p>
-			<p><?php echo get_option( 'monthly_costs_label' ); ?></p>
+			<p><?php echo get_option( 'monthly_costs_label', 'inclusief administratiekosten.' ); ?></p>
 		</div>
 		<div class="wp-block-column">
 			<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +55,7 @@ function calculator_shortcode( $atts ) {
 			</svg>
 			<p class="amount surplus"></p>
 			<p class="amount-title"><?php _e( 'Monthly savings', 'samsam' ); ?></p>
-			<p><?php echo get_option( 'monthly_savings_label' ); ?></p>
+			<p><?php echo get_option( 'monthly_savings_label', 'in de afgelopen 12 maanden (gemiddeld).' ); ?></p>
 		</div>
 <?php if ( esc_attr( $show_required_income ) == true ) { // to show required income use the shortcode [calculator show_required_income=true] ?>
 		<div class="wp-block-column">
@@ -68,7 +68,7 @@ function calculator_shortcode( $atts ) {
 			</svg>
 			<p class="amount required-income-eenmanszaak"></p>
 			<p class="amount-title"><?php _e( 'Required income', 'samsam' ); ?></p>
-			<p><?php echo get_option( 'required_income_label' ); ?></p>
+			<p><?php echo get_option( 'required_income_label', 'bruto uit onderneming per maand (ZZP’er).' ); ?></p>
 		</div>
 <?php } ?>
 	</div>
