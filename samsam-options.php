@@ -12,6 +12,8 @@ function samsam_create_menu() {
 }
 add_action( 'admin_menu', 'samsam_create_menu' );
 
+wp_enqueue_script( 'wp-color-picker' );
+wp_enqueue_style( 'wp-color-picker' );
 
 // Register the settings
 function samsam_register_settings() {
@@ -21,6 +23,12 @@ function samsam_register_settings() {
 	register_setting( 'samsam-settings-group', 'cost_factor', 'samsam_sanitisation' );
 	register_setting( 'samsam-settings-group', 'surplus_percentage', 'samsam_sanitisation' );
 	register_setting( 'samsam-settings-group', 'show_specification' );
+
+	register_setting( 'samsam-settings-group', 'monthly_deposit_label' );
+	register_setting( 'samsam-settings-group', 'monthly_costs_label' );
+	register_setting( 'samsam-settings-group', 'monthly_savings_label' );
+	register_setting( 'samsam-settings-group', 'required_income_label' );
+	register_setting( 'samsam-settings-group', 'piggybank_color' );
 }
 
 function samsam_sanitisation ( $input ) {
@@ -33,6 +41,7 @@ function samsam_settings_page() { ?>
 		<h2><?php _e( 'SamSam Options', 'samsam' ); ?></h2>
 		<form method="post" action="options.php">
 			<?php settings_fields( 'samsam-settings-group' ); ?>
+			<h2 class="title"><?php _e( 'Costs and Savings', 'samsam' ); ?></h2>
 			<table class="form-table">
 				<tr valign="top">
 					<th scope="row">
@@ -90,10 +99,73 @@ function samsam_settings_page() { ?>
 					</td>
 				</tr>
 			</table>
+			<h2 class="title"><?php _e( 'Labels', 'samsam' ); ?></h2>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row">
+						<label for="monthly_deposit_label">
+							<?php _e( 'Monthly deposit', 'samsam' ); ?>
+						</label>
+					</th>
+					<td>
+						<input type="text" id="monthly_deposit_label" name="monthly_deposit_label" value="<?php echo esc_html ( get_option( 'monthly_deposit_label' ) ); ?>" class="regular-text"/>
+					</td>
+				</tr>
+				<tr valign="top">
+					<th scope="row">
+						<label for="monthly_costs_label">
+							<?php _e( 'Monthly costs', 'samsam' ); ?>
+						</label>
+					</th>
+					<td>
+						<input type="text" id="bank_costs" name="monthly_costs_label" value="<?php echo esc_html ( get_option( 'monthly_costs_label' ) ); ?>" class="regular-text"/>
+					</td>
+				</tr>
+				<tr valign="top">
+					<th scope="row">
+						<label for="monthly_savings_label">
+							<?php _e( 'Monthly savings', 'samsam' ); ?>
+						</label>
+					</th>
+					<td>
+						<input type="text" id="monthly_savings_label" name="monthly_savings_label" value="<?php echo esc_html ( get_option( 'monthly_savings_label' ) ); ?>" class="regular-text"/>
+					</td>
+				</tr>
+				<tr valign="top">
+					<th scope="row">
+						<label for="required_income_label">
+							<?php _e( 'Required income', 'samsam' ); ?>
+						</label>
+					</th>
+					<td>
+						<input type="text" id="required_income_label" name="required_income_label" value="<?php echo esc_html ( get_option( 'required_income_label' ) ); ?>" class="regular-text"/>
+					</td>
+				</tr>
+			</table>
+			<h2 class="title"><?php _e( 'Colors', 'samsam' ); ?></h2>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row">
+						<label for="piggybank_color">
+							<?php _e( 'Piggybank color', 'samsam' ); ?>
+						</label>
+					</th>
+					<td>
+						<input type="text" class="color-picker" id="piggybank_color" name="piggybank_color" value="<?php echo esc_html ( get_option( 'piggybank_color' ) ); ?>" />
+					</td>
+				</tr>
+			</table>
 			<p class="submit">
 				<input type="submit" class="button-primary" value="<?php _e( 'Save Changes' ); ?>" />
 			</p>
 		</form>
 	</div>
+
+	<script>
+		// Color picker
+		jQuery(document).ready(function($) {
+			$('.color-picker').wpColorPicker();
+		});
+	</script>
 
 <?php };

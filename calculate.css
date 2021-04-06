@@ -5,7 +5,7 @@ label[for=desired-income] {
 }
 
 .rangeslider {
-	margin: 50px 0 70px 0;
+	margin: 50px 0 50px 0;
 }
 
 .rangeslider__fill {
@@ -31,6 +31,7 @@ label[for=desired-income] {
 .desired-income,
 .montly-payment,
 .variable-costs,
+.monthly-costs,
 .fixed-costs,
 .surplus-percentage,
 .surplus,
@@ -47,6 +48,12 @@ label[for=desired-income] {
 .calculator-icons img {
 	display: inline-block;
 	height: 90px;
+	width: auto;
+}
+
+.calculator-icons svg {
+	display: inline-block;
+	height: 120px;
 	width: auto;
 }
 

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SamSamKring Plugin\n"
-"POT-Creation-Date: 2020-08-12 09:28+0200\n"
-"PO-Revision-Date: 2020-08-12 09:30+0200\n"
+"POT-Creation-Date: 2021-04-02 16:06+0200\n"
+"PO-Revision-Date: 2021-04-02 16:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -22,81 +22,80 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: samsam-options.php:10 samsam-options.php:33
+#: samsam-options.php:10 samsam-options.php:38
 msgid "SamSam Options"
 msgstr "SamSam instellingen"
 
-#: samsam-options.php:40
+#: samsam-options.php:41
+msgid "Costs and Savings"
+msgstr "Kosten en spaarpercentage"
+
+#: samsam-options.php:46
 msgid "Administration costs"
 msgstr "Administratiekosten"
 
-#: samsam-options.php:45
+#: samsam-options.php:51
 msgid "Monthly administration costs."
 msgstr "Maandelijkse administratiekosten."
 
-#: samsam-options.php:45 samsam-options.php:56 samsam-options.php:67
-#: samsam-options.php:78 samsam-options.php:89 samsam-options.php:100
-#: samsam-options.php:111 samsam-options.php:122
+#: samsam-options.php:51 samsam-options.php:62 samsam-options.php:73
+#: samsam-options.php:84 samsam-options.php:95
 msgid "The default value is"
 msgstr "De standaardwaarde is"
 
-#: samsam-options.php:51
+#: samsam-options.php:57
 msgid "Bank costs"
 msgstr "Bankkosten"
 
-#: samsam-options.php:56
+#: samsam-options.php:62
 msgid "Monthly bank costs."
 msgstr "Maandelijkse bankkosten."
 
-#: samsam-options.php:62
+#: samsam-options.php:68
 msgid "Health and Safety Service costs"
 msgstr "Kosten arbodienst"
 
-#: samsam-options.php:67
+#: samsam-options.php:73
 msgid "Monthly costs for the Health and Safety Service."
 msgstr "Maandelijkse kosten arbodienst."
 
-#: samsam-options.php:73
+#: samsam-options.php:79
 msgid "Cost factor"
 msgstr "Kostenfactor"
 
-#: samsam-options.php:78
+#: samsam-options.php:84
 msgid "Description of this option."
 msgstr "Beschrijving van deze optie."
 
-#: samsam-options.php:84
+#: samsam-options.php:90
 msgid "Surplus percentage"
 msgstr "Spaarpercentage"
 
-#: samsam-options.php:89
+#: samsam-options.php:95
 msgid "Historic savings percentage."
 msgstr "Historisch spaarpercentage."
 
-#: samsam-options.php:95
-msgid "Slider minimum"
-msgstr "Slider minimum"
+#: samsam-options.php:99
+msgid "Labels"
+msgstr "Labels"
 
-#: samsam-options.php:100
-msgid "Starting value on the range slider."
-msgstr "Beginwaarde van de slider."
+#: samsam-options.php:104
+msgid "Monthly deposit"
+msgstr "Maandelijkse storting"
 
-#: samsam-options.php:106
-msgid "Slider default"
-msgstr "Slider standaard"
+#: samsam-options.php:114
+msgid "Monthly costs"
+msgstr "Maandelijkse kosten"
 
-#: samsam-options.php:111
-msgid "Default value on the range slider."
-msgstr "Standaardwaarde van de slider."
+#: samsam-options.php:124
+msgid "Monthly savings"
+msgstr "Maandelijks gespaard"
 
-#: samsam-options.php:117
-msgid "Slider maximum"
-msgstr "Slider maximum"
+#: samsam-options.php:134
+msgid "Required income"
+msgstr "Benodigd inkomen"
 
-#: samsam-options.php:122
-msgid "End value on the range slider."
-msgstr "Eindwaarde van de slider."
-
-#: samsam-options.php:127
+#: samsam-options.php:143
 msgid "Save Changes"
 msgstr "Wijzigingen opslaan"
 
@@ -119,6 +118,24 @@ msgstr "Johan van der Wijk"
 #. Author URI of the plugin/theme
 msgid "https://thewebworks.nl"
 msgstr "https://thewebworks.nl"
+
+#~ msgid "Slider minimum"
+#~ msgstr "Slider minimum"
+
+#~ msgid "Starting value on the range slider."
+#~ msgstr "Beginwaarde van de slider."
+
+#~ msgid "Slider default"
+#~ msgstr "Slider standaard"
+
+#~ msgid "Default value on the range slider."
+#~ msgstr "Standaardwaarde van de slider."
+
+#~ msgid "Slider maximum"
+#~ msgstr "Slider maximum"
+
+#~ msgid "End value on the range slider."
+#~ msgstr "Eindwaarde van de slider."
 
 #~ msgid "Slider start"
 #~ msgstr "Slider start"
