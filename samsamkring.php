@@ -4,8 +4,8 @@
  * Plugin Name:       SamSamKring Plugin
  * Plugin URI:        https://www.samsamkring.nl/
  * Description:       SamSam check and other functions
- * Version:           2.0.2
- * Requires at least: 5.4
+ * Version:           2.0.3
+ * Requires at least: 5.7
  * Author:            Johan van der Wijk
  * Author URI:        https://thewebworks.nl
  * License:           GPL v2 or later
