@@ -30,7 +30,7 @@ function calculator_shortcode( $atts ) {
 			</svg>
 			<p class="amount montly-payment"></p>
 			<p class="amount-title"><?php _e( 'Monthly deposit', 'samsam' ); ?></p>
-			<p><?php echo get_option( 'monthly_deposit_label', 'dit bedrag is inclusief alle kosten.' ); ?></p>
+			<p><?php echo get_option( 'monthly_deposit_label', 'in de afgelopen 12 maanden (gemiddeld).' ); ?></p>
 		</div>
 		<div class="wp-block-column">
 			<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ function calculator_shortcode( $atts ) {
 			</svg>
 			<p class="amount monthly-costs"></p>
 			<p class="amount-title"><?php _e( 'Monthly costs', 'samsam' ); ?></p>
-			<p><?php echo get_option( 'monthly_costs_label', 'inclusief administratiekosten.' ); ?></p>
+			<p><?php echo get_option( 'monthly_costs_label', 'in de afgelopen 12 maanden (gemiddeld).' ); ?></p>
 		</div>
 		<div class="wp-block-column">
 			<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
