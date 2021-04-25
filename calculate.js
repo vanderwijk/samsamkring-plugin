@@ -41,6 +41,7 @@ function samsam_check() {
  
 	var monthly_costs = monthly_payment - surplus;
 
+	// format and localize values for output
 	numeral.locale('nl-nl');
 
 	var surplus_percentage = numeral(samsam_options.surplus_percentage / 100).format('0.0 %');
@@ -56,17 +57,17 @@ function samsam_check() {
 	var required_income_eenmanszaak_formatted = numeral(required_income_eenmanszaak).format('$0,0');
 	var required_income_bv_formatted = numeral(required_income_bv).format('$0,0');
 
-	jQuery('.required-income-eenmanszaak').html(required_income_eenmanszaak_formatted);
-	jQuery('.required-income-bv').html(required_income_bv_formatted);
-
-	jQuery('.montly-payment').html(monthly_payment_formatted);
-	jQuery('.desired-income').html(desired_income_formatted);
-	jQuery('.fixed-costs').html(fixed_costs_formatted);
-	jQuery('.rangeslider__handle').html( '<span class="desired">' + desired_income_formatted_clean + '</span>');
-
-	jQuery('.variable-costs').html(variable_costs);
+	// show formatted values
 	jQuery('.surplus-percentage').html(surplus_percentage);
+	jQuery('.variable-costs').html(variable_costs);
 	jQuery('.surplus').html(surplus_formatted);
 	jQuery('.monthly-costs').html(monthly_costs_formatted);
 
+	jQuery('.desired-income').html(desired_income_formatted);
+	jQuery('.rangeslider__handle').html( '<span class="desired">' + desired_income_formatted_clean + '</span>');
+	jQuery('.fixed-costs').html(fixed_costs_formatted);
+	jQuery('.montly-payment').html(monthly_payment_formatted);
+
+	jQuery('.required-income-eenmanszaak').html(required_income_eenmanszaak_formatted);
+	jQuery('.required-income-bv').html(required_income_bv_formatted);
 }
