@@ -15,7 +15,14 @@
  */
 
 define('SAMSAM_PLUGIN_URL', plugins_url() . '/samsamkring-plugin/' );
-define('SAMSAM_PLUGIN_VER', '2.0.3');
+define('SAMSAM_PLUGIN_VER', '2.0.4');
+
+// slider default values
+define('HEALTH_AND_SAFETY_SERVICE_COSTS', 3.258333333333);
+define('SURPLUS_PERCENTAGE', 83.718518518519);
+define('BANK_COSTS', 7.99);
+define('ADMINISTRATION_COSTS', 15);
+define('COST_FACTOR', 0.045);
 
 // load plugin textdomain
 function samsam_load_textdomain() {
