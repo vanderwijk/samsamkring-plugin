@@ -12,8 +12,12 @@ function samsam_create_menu() {
 }
 add_action( 'admin_menu', 'samsam_create_menu' );
 
-wp_enqueue_script( 'wp-color-picker' );
-wp_enqueue_style( 'wp-color-picker' );
+function samsam_admin_scripts() {
+	wp_enqueue_script( 'wp-color-picker' );
+	wp_enqueue_style( 'wp-color-picker' );
+}
+add_action( 'admin_enqueue_scripts', 'samsam_admin_scripts' );
+
 
 // Register the settings
 function samsam_register_settings() {
