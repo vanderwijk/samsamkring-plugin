@@ -4,7 +4,7 @@
  * Plugin Name:       SamSamKring Plugin
  * Plugin URI:        https://www.samsamkring.nl/
  * Description:       SamSam check and other functions
- * Version:           2.0.6
+ * Version:           2.0.7
  * Requires at least: 5.7
  * Author:            Johan van der Wijk
  * Author URI:        https://thewebworks.nl
@@ -15,7 +15,7 @@
  */
 
 define('SAMSAM_PLUGIN_URL', plugins_url() . '/samsamkring-plugin/' );
-define('SAMSAM_PLUGIN_VER', '2.0.6');
+define('SAMSAM_PLUGIN_VER', '2.0.7');
 
 // slider default values
 define('HEALTH_AND_SAFETY_SERVICE_COSTS', 0);
@@ -46,7 +46,7 @@ function samsam_enqueues() {
 	// dynamic values for JS calculations -> check for empty because default value for get_option doesn't work
 	if ( empty( get_option( 'administration_costs' ))) { $administration_costs = ADMINISTRATION_COSTS; } else { $administration_costs = get_option( 'administration_costs' ); }
 	if ( empty( get_option( 'bank_costs' ))) { $bank_costs = BANK_COSTS; } else { $bank_costs = get_option( 'bank_costs' ); }
-	if ( empty( get_option( 'health_and_safety_service_costs' ))) { $health_and_safety_service_costs = 5; } else { $health_and_safety_service_costs = get_option( 'health_and_safety_service_costs' ); }
+	if ( empty( get_option( 'health_and_safety_service_costs' ))) { $health_and_safety_service_costs = HEALTH_AND_SAFETY_SERVICE_COSTS; } else { $health_and_safety_service_costs = get_option( 'health_and_safety_service_costs' ); }
 	if ( empty( get_option( 'cost_factor' ))) { $cost_factor = COST_FACTOR; } else { $cost_factor = get_option( 'cost_factor' ); }
 	if ( empty( get_option( 'surplus_percentage' ))) { $surplus_percentage = SURPLUS_PERCENTAGE; } else { $surplus_percentage = get_option( 'surplus_percentage' ); }
 	
