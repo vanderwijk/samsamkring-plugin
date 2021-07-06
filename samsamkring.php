@@ -4,7 +4,7 @@
  * Plugin Name:       SamSamKring Plugin
  * Plugin URI:        https://www.samsamkring.nl/
  * Description:       SamSam check and other functions
- * Version:           2.0.5
+ * Version:           2.0.6
  * Requires at least: 5.7
  * Author:            Johan van der Wijk
  * Author URI:        https://thewebworks.nl
@@ -15,11 +15,11 @@
  */
 
 define('SAMSAM_PLUGIN_URL', plugins_url() . '/samsamkring-plugin/' );
-define('SAMSAM_PLUGIN_VER', '2.0.5');
+define('SAMSAM_PLUGIN_VER', '2.0.6');
 
 // slider default values
-define('HEALTH_AND_SAFETY_SERVICE_COSTS', 3.258333333333);
-define('SURPLUS_PERCENTAGE', 83.718518518519);
+define('HEALTH_AND_SAFETY_SERVICE_COSTS', 0);
+define('SURPLUS_PERCENTAGE', 85);
 define('BANK_COSTS', 2.99);
 define('ADMINISTRATION_COSTS', 15);
 define('DEFAULT_COST_FACTOR', 0.045);
