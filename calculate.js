@@ -34,17 +34,18 @@ function samsam_check() {
 
 	// calculate fixed costs
 	var fixed_costs = Number(samsam_options.bank_costs) + Number(samsam_options.administration_costs);
-	var monthly_payment = samsam_options.cost_factor * desired_income + fixed_costs;
-
 	var variable_costs = samsam_options.cost_factor * desired_income; // this variable is probably wrongly named
-	var surplus = ( samsam_options.surplus_percentage / 100 ) * desired_income * samsam_options.cost_factor - samsam_options.health_and_safety_service_costs;
+	var monthly_payment = variable_costs + fixed_costs;
+
+	var surplus_percentage_corrected = ( 1 - ( ( 1 - samsam_options.surplus_percentage / 100 ) * samsam_options.default_cost_factor / samsam_options.cost_factor ) ) * 100;
+	var surplus = ( surplus_percentage_corrected / 100 ) * desired_income * samsam_options.cost_factor - samsam_options.health_and_safety_service_costs;
  
 	var monthly_costs = monthly_payment - surplus;
 
 	// format and localize values for output
 	numeral.locale('nl-nl');
 
-	var surplus_percentage = numeral(samsam_options.surplus_percentage / 100).format('0.0 %');
+	var surplus_percentage = numeral(surplus_percentage_corrected / 100).format('0.0 %');
 	var variable_costs = numeral(variable_costs).format('$0,0.00');
 	var surplus_formatted = numeral(surplus).format('$0,0.00');
 	var monthly_costs_formatted = numeral(monthly_costs).format('$0,0.00');

@@ -54,7 +54,7 @@ function samsam_settings_page() { ?>
 					</th>
 					<td>
 						<input type="text" id="administration_costs" name="administration_costs" value="<?php echo esc_html ( get_option( 'administration_costs' ) ); ?>" />
-						<p class="description"><?php _e( 'Monthly administration costs.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> 15.</p>
+						<p class="description"><?php _e( 'Monthly administration costs.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> <?php echo ADMINISTRATION_COSTS; ?>.</p>
 					</td>
 				</tr>
 				<tr valign="top">
@@ -65,7 +65,7 @@ function samsam_settings_page() { ?>
 					</th>
 					<td>
 						<input type="text" id="bank_costs" name="bank_costs" value="<?php echo esc_html ( get_option( 'bank_costs' ) ); ?>" />
-						<p class="description"><?php _e( 'Monthly bank costs.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> 8.</p>
+						<p class="description"><?php _e( 'Monthly bank costs.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> <?php echo BANK_COSTS; ?>.</p>
 					</td>
 				</tr>
 				<tr valign="top">
@@ -76,7 +76,7 @@ function samsam_settings_page() { ?>
 					</th>
 					<td>
 						<input type="text" id="health_and_safety_service_costs" name="health_and_safety_service_costs" value="<?php echo esc_html ( get_option( 'health_and_safety_service_costs' ) ); ?>" />
-						<p class="description"><?php _e( 'Monthly costs for the Health and Safety Service.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> 5.</p>
+						<p class="description"><?php _e( 'Monthly costs for the Health and Safety Service.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> <?php echo HEALTH_AND_SAFETY_SERVICE_COSTS; ?>.</p>
 					</td>
 				</tr>
 				<tr valign="top">
@@ -87,7 +87,7 @@ function samsam_settings_page() { ?>
 					</th>
 					<td>
 						<input type="text" id="cost_factor" name="cost_factor" value="<?php echo esc_html ( get_option( 'cost_factor' ) ); ?>" />
-						<p class="description"><?php _e( 'Description of this option.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> 0.045.</p>
+						<p class="description"><?php _e( 'Description of this option.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> <?php echo DEFAULT_COST_FACTOR; ?>.</p>
 					</td>
 				</tr>
 				<tr valign="top">
@@ -98,7 +98,7 @@ function samsam_settings_page() { ?>
 					</th>
 					<td>
 						<input type="text" id="surplus_percentage" name="surplus_percentage" value="<?php echo esc_html ( get_option( 'surplus_percentage' ) ); ?>" />
-						<p class="description"><?php _e( 'Historic savings percentage.', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> 95.</p>
+						<p class="description"><?php _e( 'Historic savings percentage (standardized to default cost factor).', 'samsam' ); ?> <?php _e( 'The default value is', 'samsam' ); ?> <?php echo SURPLUS_PERCENTAGE; ?>.</p>
 					</td>
 				</tr>
 			</table>
